@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 import 'splash_screen.dart';
 import 'ui/login_page.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder> {
         '/landingpage': (BuildContext context)=> new MyApp(),
         '/LoginPage': (BuildContext context) => new LoginPage(),
+        '/HomePage': (BuildContext context) => new HomePage(),
       }
     );
   }

@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:aptitude_app/style/theme.dart' as Theme;
 
-
 class LoginPage extends StatefulWidget {
   LoginPage({Key key}) : super(key: key);
 
@@ -330,7 +329,11 @@ class _LoginPageState extends State<LoginPage>
                             fontFamily: "WorkSansBold"),
                       ),
                     ),
-                    onPressed: () => showInSnackBar("Login button pressed")),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed("/HomePage");
+                    }
+                    //showInSnackBar("Login button pressed"),
+                    ),
               ),
             ],
           ),
