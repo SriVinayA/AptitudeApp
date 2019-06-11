@@ -9,16 +9,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'NWIT',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: SplashScreen(),
-      routes: <String, WidgetBuilder> {
-        '/landingpage': (BuildContext context)=> new MyApp(),
-        '/LoginPage': (BuildContext context) => new LoginPage(),
-        '/HomePage': (BuildContext context) => new HomePage(),
-      }
-    );
+        title: 'NWIT',
+        theme: new ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: SplashScreen(),
+        routes: <String, WidgetBuilder>{
+          '/landingpage': (BuildContext context) => new MyApp(),
+          '/LoginPage': (BuildContext context) => new LoginPage(),
+          '/HomePage': (BuildContext context) => new HomePage(),
+        });
   }
 }
